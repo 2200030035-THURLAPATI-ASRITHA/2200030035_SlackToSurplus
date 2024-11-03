@@ -1,0 +1,106 @@
+@charset "UTF-8";
+/* Reset some default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body and Background */
+body, html {
+    background-color: #F3E5F5;
+    color: #4A148C;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar Styling */
+header {
+    background-color: #CE93D8;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.left-menu, .right-menu {
+    display: flex;
+    list-style: none;
+}
+
+.left-menu li, .right-menu li {
+    margin: 0 15px;
+}
+
+.left-menu li a, .right-menu li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.left-menu li a:hover, .right-menu li a:hover {
+    background-color: #AB47BC;
+}
+
+/* Main Content */
+main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Services Section */
+.services {
+    display: flex;
+    gap: 40px;
+}
+
+.service-option {
+    background-color: #D1C4E9;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 200px;
+    text-decoration: none;
+    color: #4A148C;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.service-option:hover {
+    transform: translateY(-5px);
+    background-color: #B39DDB;
+}
+
+.service-option h2 {
+    color: #6A1B9A;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.service-option p {
+    color: #4A148C;
+    font-size: 16px;
+}
+
+/* Footer */
+footer {
+    background-color: #CE93D8;
+    text-align: center;
+    padding: 15px 0;
+    color: #FFFFFF;
+    font-size: 14px;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+}

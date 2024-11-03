@@ -1,0 +1,214 @@
+@charset "UTF-8";
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body, html {
+    background-color: #F3E5F5;
+    color: #4A148C;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* Navbar Styling */
+header {
+    background-color: #CE93D8;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.left-menu, .right-menu {
+    display: flex;
+}
+
+.left-menu li, .right-menu li {
+    margin: 0 15px;
+}
+
+.left-menu li a, .right-menu li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.left-menu li a:hover, .right-menu li a:hover {
+    background-color: #AB47BC;
+}
+
+/* Main Container */
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: 90%;
+    margin: auto;
+}
+
+/* Left Section for Posts */
+.posts-section {
+    width: 65%;
+}
+
+.posts-section h1 {
+    font-size: 24px;
+    color: #6A1B9A;
+    margin-bottom: 10px;
+}
+
+/* Post Need Section */
+.post-offering, .post-announcement {
+    background-color: #D1C4E9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.post-offering form, .post-announcement form {
+    display: flex;
+    flex-direction: column;
+}
+
+.post-offering form textarea, .post-announcement form textarea {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #AB47BC;
+    border-radius: 5px;
+    resize: none;
+}
+
+.post-offering form input[type="file"], .post-announcement form input[type="file"] {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.post-offering form input[type="submit"], .post-announcement form input[type="submit"] {
+    background-color: #8E24AA;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.post-offering form input[type="submit"]:hover, .post-announcement form input[type="submit"]:hover {
+    background-color: #7B1FA2;
+}
+
+/* Needs List and Individual Posts */
+.offerings-list .need-post {
+    background-color: #EDE7F6;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.offeringss-list .need-post .post-img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.post-actions button {
+    background-color: #8E24AA;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.post-actions button:hover {
+    background-color: #7B1FA2;
+}
+
+/* Announcements Section */
+.announcements-section {
+    width: 30%;
+    background-color: #F3E5F5;
+}
+
+.announcements-section h2 {
+    font-size: 24px;
+    color: #6A1B9A;
+    margin-bottom: 10px;
+}
+
+/* Comments Section in Posts */
+.comments {
+    margin-top: 10px;
+    background-color: #EDE7F6;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.comments h4 {
+    color: #6A1B9A;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.comments .comment {
+    margin-bottom: 10px;
+}
+
+.comments form {
+    display: flex;
+    flex-direction: column;
+}
+
+.comments input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #AB47BC;
+    border-radius: 5px;
+}
+
+.comments input[type="submit"] {
+    background-color: #8E24AA;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.comments input[type="submit"]:hover {
+    background-color: #7B1FA2;
+}
+
+/* Footer */
+footer {
+    background-color: #CE93D8;
+    text-align: center;
+    padding: 15px 0;
+    color: #FFFFFF;
+    font-size: 14px;
+    margin-top: auto;
+}

@@ -1,0 +1,142 @@
+@charset "UTF-8";
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body and Background */
+body, html {
+    background-color: #F3E5F5;
+    color: #4A148C;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Navbar Styling */
+header {
+    background-color: #CE93D8;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.left-menu {
+    display: flex;
+    list-style: none;
+}
+
+.left-menu li {
+    margin: 0 15px;
+}
+
+.left-menu li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.left-menu li a:hover {
+    background-color: #AB47BC;
+}
+
+/* Centered Auth Section */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    flex-grow: 1;
+}
+
+.auth-section {
+    text-align: center;
+    max-width: 400px;
+}
+
+.auth-section h1 {
+    color: #6A1B9A;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.tab {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tab-button {
+    background-color: #8E24AA;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+.tab-button:hover {
+    background-color: #7B1FA2;
+}
+
+.form-container {
+    background-color: #D1C4E9;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.form-container label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #AB47BC;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.form-container input[type="submit"] {
+    background-color: #8E24AA;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.form-container input[type="submit"]:hover {
+    background-color: #7B1FA2;
+}
+
+/* Footer */
+footer {
+    background-color: #CE93D8;
+    text-align: center;
+    padding: 15px 0;
+    color: #FFFFFF;
+    font-size: 14px;
+    width: 100%;
+}
